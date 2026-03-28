@@ -18,3 +18,23 @@ var pizzaText = document.getElementsByClassName("pizza");
 
 pizzaText[0].style.color = "red";
 pizzaText[2].style.color = "orange";
+
+function changeColor(color){
+    description.style.color = color;
+}
+
+pizzaImages[0].addEventListener("mouseover", function(){
+    changeColor("red");
+});
+
+pizzaImages[1].addEventListener("mouseover", function(){
+    changeColor("green");
+});
+
+pizzaImages[2].addEventListener("mouseover", function(){
+    changeColor("orange");
+});
+
+description.addEventListener("mouseover", function(){
+    changeColor("black");
+});
